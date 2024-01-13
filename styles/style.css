@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 5px;
+    margin-top:5px ;
+   
+}
+.roe > div{
+    flex: 1;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.child1{
+    height: 100%;
+}
+.child1 img{
+height: 50%;
+}
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+/* flex: 1; */
+width: 36%;
+height: 36%;
+gap: 5px;
+
+
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        /* height: auto; */
+    }
+}
+
+/* responsive medium device */
+
+@media screen and (min-width:576px) and ( max-width:990px) {
+   .row{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   }
+   .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    /* height: auto; */
+}
+
+}
+
+/* grid layout */
+
+.grid_container{
+    margin-top: 60px; ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,100px);
+    gap: 10px;
+    background-color: yellow;
+    padding: 5px;
+    margin-bottom: 60px;
+
+}
+.item{
+    background-color: brown;
+    border: 2px solid red;
+
+}
+#item_chi1{
+    grid-row: span 5;
+    background-color: gray;
+}
+.item11 , .item12{
+    
+    grid-column:2/  span 3;
+    background-color: aqua;
+}
+
+
+
